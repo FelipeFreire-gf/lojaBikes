@@ -1,0 +1,22 @@
+body{
+margin: 0;
+padding: 0;
+background-color: #c3c3c3;
+}
+
+.container-carrousel{
+    background-color: rgb(30, 126, 211);    
+
+}
+
+.carousel-inner > .carousel-item > img {
+       height: 230px;
+}
+
+.card-img-top{
+    padding: 30px;
+}
+
+button{
+      border-radius: 4px;
+}
