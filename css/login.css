@@ -80,10 +80,6 @@ a{
   background-color: none;
 }
 
-.painel_adm input[type=text], input[type=password]{
-  background-color: #3CBC8D;
-  color: white;
-}
 
 input[type=radio]{
   margin: 0px;
