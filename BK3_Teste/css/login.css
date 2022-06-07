@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap');
+
+ /* Bordered form */
+ form {
+  border: 3px solid #f3f2f2;
+  
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.PRINCIPAL{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+}
+
+.painel_adm{
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 45px;
+  color: #ffffff;
+}
+
+.painel_central{
+  background-color: #082b4d;
+  padding: 20px;  
+  box-shadow:  0px 1px 2px rgb(85, 95, 141);
+  margin: 10px;
+}
+
+.painel_adm button{
+ font-family: 'Roboto', sans-serif;
+ margin: 1px;
+}
+
+input::placeholder{
+color: #06213b;
+}
+
+a{
+  text-decoration: none;
+  background-color: none;
+}
+
+.painel_adm input[type=text], input[type=password]{
+  background-color: #3CBC8D;
+  color: white;
+}
+
+input[type=radio]{
+  margin: 0px;
+}
+
+.botao_cadastrar{
+  background-color: #f3f2f2;
+  padding: 10px 16px;
+  width: 235px;
+  transition-duration: 0.3s ;
+}
+
+
+.botao_cadastrar:hover{
+  background-color: #06213b;
+  color: #3CBC8D;
+
+}
+
+.form_radio{
+ 
+  margin: 3px;
+}
