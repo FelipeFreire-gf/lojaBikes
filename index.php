@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Página Principal</title>
 
-
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="css/login.css">
 
@@ -28,10 +27,6 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Início</a>
           </li>
-
-
-         
-
             </ul>
           </li>
 
@@ -45,7 +40,9 @@
 
     <!--Formulário-->
     <div class="div_form">
-      <form action="admini.php" method="post">
+     
+      <form action="processa_login.php" method="post">
+
         <div class="imgcontainer">
           <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66" fill="currentColor" class="bi bi-person-circle"
             viewBox="0 0 16 16">
@@ -57,10 +54,10 @@
 
         <div class="container">
           <label for="nome"><b>Usuário</b></label>
-          <input type="text" placeholder="Insira o nome de usuário" name="nome" required>
+          <input type="text" placeholder="Insira o nome de usuário" name="login" required>
 
           <label for="senha"><b>Senha</b></label>
-          <input type="password" placeholder="Inisira a senha" name="senha " required>
+          <input type="password" placeholder="Insira a senha" name="senha" required>
 
           <button type="submit" class="btn btn-outline-light btn-rounded"  style="background-color: #db3d3d;" >Login</button>
         </div>
