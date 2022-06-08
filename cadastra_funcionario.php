@@ -87,8 +87,6 @@
 
           <input type="text" name="ativo" placeholder="Situação" required> 
           
-            
-
           <div class="botoes">
           <button type="submit" class="botao_cadastrar"  >Cadastrar Funcionário</button>      
           <button type="reset"  class="botao_cadastrar"  >Limpar Campos</button>    
