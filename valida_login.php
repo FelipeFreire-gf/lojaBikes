@@ -1,7 +1,7 @@
 <?php
-	if ( isset($_SESSION["login_fun"]) ) {
+	if ( isset($_SESSION["LOGIN_FUNCIONARIO"]) ) {
 		
-		echo $_SESSION["nome_fun"];
+		echo $_SESSION["NOME_FUNCIONARIO"];
 		
 	}
 	else {

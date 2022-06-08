@@ -1,5 +1,5 @@
 <?php
-if ($_SESSION["funcao_fun"] == "administrador") {
+if ($_SESSION["FUNCAO_FUNCIONARIO"] == "ADMINISTRADOR") {
 ?>
     <?php
     /*
@@ -21,7 +21,7 @@ if ($_SESSION["funcao_fun"] == "administrador") {
         <button type="submit" class="btn btn-outline-light btn-rounded" style="background-color: #bebebe;"><a href="relatorios.php"> Relatórios </a></button>
     </div>
 <?php
-} elseif ($_SESSION["funcao_fun"] == "estoquista") {
+} elseif ($_SESSION["FUNCAO_FUNCIONARIO"] == "ESTOQUISTA") {
 ?>
 
     <div class="painel_adm">
@@ -29,7 +29,7 @@ if ($_SESSION["funcao_fun"] == "administrador") {
         <button type="submit" class="btn btn-outline-light btn-rounded" style="background-color: #bebebe;"><a href="lista_bicicletas.php"> Bicicletas </a></button>
     </div>
 <?php
-} elseif ($_SESSION["funcao_fun"] == "vendedor") {
+} elseif ($_SESSION["FUNCAO_FUNCIONARIO"] == "VENDEDOR") {
 ?>
     <div class="painel_adm">
         <button type="submit" class="btn btn-outline-light btn-rounded" style="background-color: #bebebe;"><a href="administracao.php"> Administração </a></button>  

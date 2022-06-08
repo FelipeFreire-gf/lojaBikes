@@ -40,7 +40,6 @@ session_start();
       </div>
     </div>
   </nav>
-
   <div class="PRINCIPAL">
 
     <!--Formulário-->
@@ -48,12 +47,75 @@ session_start();
       <form action="#" method="post" class="form_painel">
         <div class="painel_central">
           <h2>LISTA FUNCIONÁRIOS</h2>
-
-         
-
         </div>
+<!-- ====================================================================================================== -->
+        <div class="form_painel"> <?php include "menu_local.php"; ?> </div>
 
+        <div id="funcionalidade" class="div_direita">					
+					<?php
+						$conectar = mysqli_connect ("localhost", "root", "", "db_bike");			
+					
+						$sql_consulta = "SELECT idFUNCIONARIO, NOME_FUNCIONARIO, FUNCAO_FUNCIONARIO, STATUS_FUNCIONARIO FROM FUNCIONARIOS";
+						$resultado_consulta = mysqli_query ($conectar, $sql_consulta);
+							
+					?>
+                    <p align="right"> <a href="cadastra_funcionario.php"> Cadastrar funcionário </a> </p>
+					<table class="form_painel">
+						<tr>
+							<td class="form_painel">
+								<p> Nome </p>
+							</td>
+							<td>
+								<p> Função </p>
+							</td>
+							<td>
+								<p> Status </p>
+							</td>
+							<td class="form_painel">
+								<p> Ação </p>
+							</td>
+						</tr>
+                        <?php		
+							while ($registro = mysqli_fetch_row($resultado_consulta)) 
+							{											
+						?>						
+						<tr>
+							<td class="esquerda">
+								<p>
+									<a href="exibe_fun.php?codigo=<?php echo $registro[0]?>"> 
+										<?php 
+											echo "$registro[1]";
+										?>
+									</a>
+								</p>
+							</td>
+							<td>
+								<p>									 
+									<?php echo "$registro[2]"; ?>
+								</p>
+							</td>
+							<td>
+								<p>									 
+									<?php 
+										echo "$registro[3]";
+									?>
+								</p>
+							</td>
+                            <td class="direita">
+								<p>
+									<a href="altera_fun.php?codigo=<?php echo $registro[0]?>">
+										Alterar	
+									</a>
+								</p>
+							</td>
+						</tr>
+						<?php
+							}
+						?>
+						</table>
+ <!-- ====================================================================================================== -->
       </form>
+      
     </div>
   </div>
 

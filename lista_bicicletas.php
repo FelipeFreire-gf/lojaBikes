@@ -30,7 +30,6 @@ session_start();
 
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.php">Olá <?php include "valida_login.php"; ?></a>
-
           </li>
 
           <li><a class="nav-link active" aria-current="page" href="logout.php">Sair</a></li>
