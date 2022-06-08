@@ -5,13 +5,8 @@
 		
 	}
 	else {
-	
-		echo "<script> 
-				alert ('Você não está logado!!!') 
-			  </script>";
-			
-		echo "<script> 
-				location.href = ('index.php') 
-			  </script>";
+        
+		echo "<script> alert ('Você não está logado!!! valida login') </script>"; 
+		echo "<script> location.href = ('index.php')  </script>";
 	}
 ?>

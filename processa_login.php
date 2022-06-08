@@ -37,9 +37,7 @@ FUNCAO_FUNCIONARIO FROM funcionarios WHERE LOGIN_FUNCIONARIO = 'admin' AND SENHA
 			  </script>";
 	}
 	else {
-		echo "<script> 
-				  alert ('Login ou Senha Incorretos! Digite Novamente!! processa_login') 
-			  </script>";
+		echo "<script> alert ('Login ou Senha Incorretos! Digite Novamente!! processa_login') </script>";
 		echo "<script> location.href = ('index.php') </script>";
 	}
 ?>

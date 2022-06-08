@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!doctype html>
 <html lang="pt-BR">
 
@@ -25,7 +29,10 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.php">Início</a>
+            <a class="nav-link active" aria-current="page" href="index.php">Olá <?php include "valida_login.php"; ?></a>
+
+
+
           </li>
 
           <li><a class="nav-link active" aria-current="page" href="logout.php">Sair</a></li>
@@ -40,26 +47,14 @@
 
     <!--Formulário-->
     <div class="div_form">
-      <form action="admini.php" method="post" class="form_painel">
+      <form action="#" method="post" class="form_painel">
         <div class="painel_central">
           <h2>ADMINISTRAÇÃO</h2>
+
+          <?php include "menu_local.php"; ?>
+
         </div>
 
-        <?php
-
-        include "menu_local.php";
-
-        ?>
-
-        <!--
-        <div class="painel_adm">       
-          <button type="submit" class="btn btn-outline-light btn-rounded"  style="background-color: #bebebe;" ><a href="cadastra_fun.html">Cadastrar Funcionários</a></button>
-          <button type="submit" class="btn btn-outline-light btn-rounded"  style="background-color: #bebebe;" ><a href="consulta_fun.html">Consultar Funcionários</a></button>
-          <button type="submit" class="btn btn-outline-light btn-rounded"  style="background-color: #bebebe;" ><a href="cadastra_bike.html">Cadastrar Bicilcletas</a></button>     
-          <button type="submit" class="btn btn-outline-light btn-rounded"  style="background-color: #bebebe;" ><a href="consulta_bike.html">Consultar Bicilcletas</a></button>
-          <button type="submit" class="btn btn-outline-light btn-rounded"  style="background-color: #bebebe;" ><a href="vendas.html"> Vendas </a></button>
-        </div>
--->
       </form>
     </div>
   </div>
@@ -73,7 +68,7 @@
         <!-- Section: CTA -->
         <section class="">
           <p class="d-flex justify-content-center align-items-center">
-            <span class="me-3">BK3_STYLE</span>
+            <span class="me-3">3ºD</span>
           </p>
         </section>
         <!-- Section: CTA -->
@@ -83,7 +78,7 @@
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         © 2020 Copyright:
-        <a class="text-white" href="#">SystemBK3</a>
+        <a class="text-white" href="#">Escola técnica de Brasília</a>
       </div>
       <!-- Copyright -->
     </footer>

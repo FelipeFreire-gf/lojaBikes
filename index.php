@@ -25,7 +25,7 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Início</a>
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
           </li>
             </ul>
           </li>
@@ -75,7 +75,7 @@
         <!-- Section: CTA -->
         <section class="">
           <p class="d-flex justify-content-center align-items-center">
-            <span class="me-3">BK3_STYLE</span>
+            <span class="me-3">3ºD</span>
           </p>
         </section>
         <!-- Section: CTA -->
@@ -85,7 +85,7 @@
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         © 2020 Copyright:
-        <a class="text-white" href="#">SystemBK3</a>
+        <a class="text-white" href="#">Escola técnica de Brasília</a>
       </div>
       <!-- Copyright -->
     </footer>
