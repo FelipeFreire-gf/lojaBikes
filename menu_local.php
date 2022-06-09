@@ -2,16 +2,6 @@
 if ($_SESSION["FUNCAO_FUNCIONARIO"] == "administrador") {
 ?>
     <?php
-    /*
-    teste
-
-        <li><a href="administracao.php" class="active">Administração</a></li>
-        <li><a href="lista_funcionarios.php" class="active">Funcionários</a></li>
-        <li><a href="lista_bicicletas.php">Bicicletas</a></li>
-        <li><a href="vendas.php">Vendas</a></li>
-        <li><a href="relatorios.php">Relatorios</a></li>
-            
-    */
     ?>
     <div class="painel_adm">
         <button type="submit" class="btn btn-outline-light btn-rounded" style="background-color: #bebebe;"><a href="administracao.php"> Administração </a></button>

@@ -48,74 +48,125 @@ session_start();
         <div class="painel_central">
           <h2>LISTA FUNCIONÁRIOS</h2>
         </div>
-<!-- ====================================================================================================== -->
-        <div class="form_painel"> <?php include "menu_local.php"; ?> </div>
+        <!-- ====================================================================================================== -->
 
-        <div id="funcionalidade" class="div_direita">					
-					<?php
-						$conectar = mysqli_connect ("localhost", "root", "", "db_bike");			
-					
-						$sql_consulta = "SELECT idFUNCIONARIO, NOME_FUNCIONARIO, FUNCAO_FUNCIONARIO, STATUS_FUNCIONARIO FROM FUNCIONARIOS";
-						$resultado_consulta = mysqli_query ($conectar, $sql_consulta);
-							
-					?>
-                    <p align="right"> <a href="cadastra_funcionario.php"> Cadastrar funcionário </a> </p>
-					<table class="form_painel">
-						<tr>
-							<td class="form_painel">
-								<p> Nome </p>
-							</td>
-							<td>
-								<p> Função </p>
-							</td>
-							<td>
-								<p> Status </p>
-							</td>
-							<td class="form_painel">
-								<p> Ação </p>
-							</td>
-						</tr>
-                        <?php		
-							while ($registro = mysqli_fetch_row($resultado_consulta)) 
-							{											
-						?>						
-						<tr>
-							<td class="esquerda">
-								<p>
-									<a href="exibe_fun.php?codigo=<?php echo $registro[0]?>"> 
-										<?php 
-											echo "$registro[1]";
-										?>
-									</a>
-								</p>
-							</td>
-							<td>
-								<p>									 
-									<?php echo "$registro[2]"; ?>
-								</p>
-							</td>
-							<td>
-								<p>									 
-									<?php 
-										echo "$registro[3]";
-									?>
-								</p>
-							</td>
-                            <td class="direita">
-								<p>
-									<a href="altera_fun.php?codigo=<?php echo $registro[0]?>">
-										Alterar	
-									</a>
-								</p>
-							</td>
-						</tr>
-						<?php
-							}
-						?>
-						</table>
- <!-- ====================================================================================================== -->
+          <div class=""> <?php include "menu_local.php"; ?> </div>
+
+          <div id="funcionalidade" class="div_direita">
+            <?php
+            $conectar = mysqli_connect("localhost", "root", "", "db_bike");
+
+            $sql_consulta = "SELECT idFUNCIONARIOS, NOME_FUNCIONARIO, FUNCAO_FUNCIONARIO, STATUS_FUNCIONARIO, ENDERECO_FUNCIONARIO, TELEFONE_FUNCIONARIO, CPF_FUNCIONARIO, RG_FUNCIONARIO, CTPS_FUNCIONARIO, DATA_NASCIMENTO_FUNCIONARIO, SEXO_FUNCIONARIO, ESCOLARIDADE_FUNCIONARIO FROM FUNCIONARIOS";
+            $resultado_consulta = mysqli_query($conectar, $sql_consulta);
+
+            ?>
+            <p align="right"> <a href="cadastra_funcionario.php"> Cadastrar funcionário </a> </p>
+            
+            <table class="">
+              <tr>
+                <td class=""> <p> Nome </p> </td>
+                <td> <p> Função </p> </td>
+                <td> <p> Status </p> </td>
+                <td> <p> Endereço </p> </td>
+                <td> <p> Telefone </p> </td>
+                <td> <p> CPF </p> </td>
+                <td> <p> RG </p> </td>
+                <td> <p> CTPS </p> </td>
+                <td> <p> Data de Nascimento </p> </td>
+                <td> <p> Sexo </p> </td>
+                <td> <p> Escolaridade </p> </td>
+                <td> <p> Ação </p> </td>
+              </tr>
+              <?php
+              while ($registro = mysqli_fetch_row($resultado_consulta)) {
+              ?>
+              <tr>
+
+                  <td class="">
+                    <p>
+                      <a href="exibe_funcionario.php?codigo=<?php echo $registro[0] ?>">
+                        <?php echo "$registro[1]"; ?>
+                      </a>
+                    </p>
+                  </td>
+
+                  <td>
+                    <p>
+                      <?php echo "$registro[2]"; ?>
+                    </p>
+                  </td>
+
+                  <td>
+                    <p>
+                      <?php echo "$registro[3]"; ?>
+                    </p>
+                  </td>
+
+                  <td>
+                    <p>
+                      <?php echo "$registro[4]"; ?>
+                    </p>
+                  </td>
+
+                  <td>
+                    <p>
+                      <?php echo "$registro[5]"; ?>
+                    </p>
+                  </td>
+
+                  <td>
+                    <p>
+                      <?php echo "$registro[6]"; ?>
+                    </p>
+                  </td>
+
+                  <td>
+                    <p>
+                      <?php echo "$registro[7]"; ?>
+                    </p>
+                  </td>
+
+                  <td>
+                    <p>
+                      <?php echo "$registro[8]"; ?>
+                    </p>
+                  </td>
+
+                  <td>
+                    <p>
+                      <?php echo "$registro[9]"; ?>
+                    </p>
+                  </td>
+
+                  <td>
+                    <p>
+                      <?php echo "$registro[10]"; ?>
+                    </p>
+                  </td>
+
+                  <td>
+                    <p>
+                      <?php echo "$registro[11]"; ?>
+                    </p>
+                  </td>
+
+
+                  <td class="direita">
+                    <p>
+                      <a href="altera_funcionario.php?codigo=<?php echo $registro[0] ?>">
+                        Alterar
+                      </a>
+                    </p>
+                  </td>
+                </tr>
+              <?php
+              }
+              ?>
+            </table>
+          </div>
+          <!-- ====================================================================================================== -->
       </form>
-      
+
     </div>
   </div>
 

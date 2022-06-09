@@ -51,9 +51,9 @@ session_start();
         <div class="painel_central">
           <h2>ADMINISTRAÇÃO</h2>
 
-          <?php include "menu_local.php"; ?>
-
         </div>
+
+        <?php include "menu_local.php"; ?>
 
       </form>
     </div>

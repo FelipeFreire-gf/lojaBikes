@@ -5,10 +5,9 @@
 	
 	$login = $_POST["login"];
 	$senha = $_POST["senha"];	
-
-
 		
-	$sql_consulta = "SELECT idFUNCIONARIO, NOME_FUNCIONARIO, LOGIN_FUNCIONARIO, SENHA_FUNCIONARIO, FUNCAO_FUNCIONARIO FROM FUNCIONARIOS
+	$sql_consulta = "SELECT idFUNCIONARIOS, NOME_FUNCIONARIO, LOGIN_FUNCIONARIO, SENHA_FUNCIONARIO,
+				            FUNCAO_FUNCIONARIO FROM FUNCIONARIOS
 					 WHERE 
                         LOGIN_FUNCIONARIO = '$login' 
 					 AND 
@@ -32,6 +31,8 @@
 	}
 	else {
 		echo "<script> alert ('Login ou Senha Incorretos! Digite Novamente!! processa_login') </script>";
+		
 		echo "<script> location.href = ('index.php') </script>";
+	
 	}
 ?>
