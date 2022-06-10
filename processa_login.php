@@ -6,7 +6,7 @@
 	$login = $_POST["login"];
 	$senha = $_POST["senha"];	
 		
-	$sql_consulta = "SELECT idFUNCIONARIO, NOME_FUNCIONARIO, LOGIN_FUNCIONARIO, SENHA_FUNCIONARIO,
+	$sql_consulta = "SELECT idFUNCIONARIOS, NOME_FUNCIONARIO, LOGIN_FUNCIONARIO, SENHA_FUNCIONARIO,
 				            FUNCAO_FUNCIONARIO FROM FUNCIONARIOS
 					 WHERE 
                         LOGIN_FUNCIONARIO = '$login' 
@@ -20,7 +20,7 @@
 	
 	if ($linhas == 1) {	
 		$registro = mysqli_fetch_row($resultado_consulta);
-		$_SESSION["idFUNCIONARIO"] = $registro[0];
+		$_SESSION["idFUNCIONARIOS"] = $registro[0];
 		$_SESSION["NOME_FUNCIONARIO"] = $registro[1];
 		$_SESSION["LOGIN_FUNCIONARIO"] = $registro[2];
 		$_SESSION["FUNCAO_FUNCIONARIO"] = $registro[4];		
