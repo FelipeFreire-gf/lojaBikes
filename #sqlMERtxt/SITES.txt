@@ -1,0 +1,7 @@
+https://www.flashbike.com.br/
+https://www.bikeplus.com.br/
+
+
+idBICICLETAS, TIPO_BIKE, MARCA_BIKE, MODELO_BIKE, COR_BIKE, RODA_BIKE, 
+						GRUPO_BIKE, QUADRO_BIKE, GUIDAO_BIKE, FREIO_BIKE, SELIM_BIKE, PEDAL_BIKE, 
+						PESO_BIKE, FOTO_BIKE, PRECO_BIKE
