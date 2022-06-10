@@ -6,7 +6,7 @@
 	$login = $_POST["login"];
 	$senha = $_POST["senha"];	
 		
-	$sql_consulta = "SELECT idFUNCIONARIOS, NOME_FUNCIONARIO, LOGIN_FUNCIONARIO, SENHA_FUNCIONARIO,
+	$sql_consulta = "SELECT idFUNCIONARIO, NOME_FUNCIONARIO, LOGIN_FUNCIONARIO, SENHA_FUNCIONARIO,
 				            FUNCAO_FUNCIONARIO FROM FUNCIONARIOS
 					 WHERE 
                         LOGIN_FUNCIONARIO = '$login' 
