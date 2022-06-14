@@ -16,7 +16,7 @@
     $funcao = $_POST["funcao"];
     $sexo = $_POST["sexo"];
 
-	$sql_consulta = "SELECT LOGIN_FUNCIONARIO FROM FUNCIONARIO 
+	$sql_consulta = "SELECT LOGIN_FUNCIONARIO FROM FUNCIONARIOS 
 					 WHERE LOGIN_FUNCIONARIO = '$login'";
 							 
 	$resultado_consulta = mysqli_query ($conectar, $sql_consulta);
@@ -30,8 +30,10 @@
 	}
 	else { 
 
-		$sql_cadastrar = "INSERT INTO funcionarios (NOME_FUNCIONARIO, LOGIN_FUNCIONARIO, SENHA_FUNCIONARIO, STATUS_FUNCIONARIO, FUNCAO_FUNCIONARIO, ENDERECO_FUNCIONARIO, TELEFONE_FUNCIONARIO, CPF_FUNCIONARIO, RG_FUNCIONARIO, CTPS_FUNCIONARIO, DATA_NASCIMENTO_FUNCIONARIO, SEXO_FUNCIONARIO, ESCOLARIDADE_FUNCIONARIO)VALUES
-        	('$nome' , '$login', '$senha', 'ativo', '$funcao', '$endereco', '$telefone', '$cpf', '$rg', '$ctps', '$dataNascimento', '$sexo', '$escolaridade')";
+		$sql_cadastrar = "INSERT INTO funcionarios (NOME_FUNCIONARIO, LOGIN_FUNCIONARIO, SENHA_FUNCIONARIO, 
+		STATUS_FUNCIONARIO, FUNCAO_FUNCIONARIO, ENDERECO_FUNCIONARIO, TELEFONE_FUNCIONARIO, 
+		CPF_FUNCIONARIO, RG_FUNCIONARIO, CTPS_FUNCIONARIO, DATA_NASCIMENTO_FUNCIONARIO, SEXO_FUNCIONARIO, ESCOLARIDADE_FUNCIONARIO) VALUES 
+		('$nome' , '$login', '$senha', 'ativo', '$funcao', '$endereco', '$telefone', '$cpf', '$rg', '$ctps', '$dataNascimento', '$sexo', '$escolaridade')";
 		$resultado_cadastrar = mysqli_query ($conectar, $sql_cadastrar);
 		
 		if ($resultado_cadastrar == true) { 		
