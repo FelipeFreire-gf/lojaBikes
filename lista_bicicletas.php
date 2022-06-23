@@ -91,7 +91,7 @@ session_start();
 						<tr>
 							<td class="">
 								<p>
-									<a href="exibe_amp.php?codigo=<?php echo $registro[0] ?>">
+									<a href="exibe_bicicleta.php?codigo=<?php echo $registro[0] ?>">
 										<?php echo $registro[3]; ?>
 									</a>
 								</p>
@@ -116,7 +116,7 @@ session_start();
 							</td>
 
 							<td class="">
-								<p> <a href="altera_amp.php?codigo=<?php echo $registro[0] ?>"> Alterar </a> </p>
+								<p> <a href="altera_bicicleta.php?codigo=<?php echo $registro[0] ?>"> Alterar </a> </p>
 							</td>
 
 						</tr>
