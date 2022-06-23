@@ -139,3 +139,38 @@ th {
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+
+/* CSS TABELA EXIBE_BIKE */
+.mae_tabela {
+  display: flex;
+  padding: 35px;
+}
+
+.tabela {
+  box-shadow: 1px 1px 0px 1px #d3d3d3;
+  width: 700px;
+  margin: 35px;
+}
+
+.div_mae {
+  display: flex;
+  align-items: space-between;
+  margin: 35px;
+}
+
+.img_bike {
+  box-shadow: 1px 1px 1px 1px #d3d3d3;
+  margin: 10px;
+}
+
+.div_texto {
+  width: 100%;
+  box-shadow: 1px 1px 0px 1px #d3d3d3;
+  margin: 10px;
+}
+
+.div_texto p {
+  margin: 25px;
+}
+
+/*//////////////////////////////*/

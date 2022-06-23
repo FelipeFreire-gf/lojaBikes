@@ -8,12 +8,11 @@ session_start();
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Administração</title>
+    <title>Exibir Bicicletas</title>
 
 
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/login.css">
-
 </head>
 
 <body class="text-center">
@@ -22,16 +21,14 @@ session_start();
     <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color: #082b4d;">
         <div class="container-fluid">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="administracao.php">Olá
+                        <a class="nav-link active" aria-current="page" href="index.php">Olá
                             <?php include "valida_login.php"; ?></a>
 
                     </li>
@@ -44,20 +41,93 @@ session_start();
         </div>
     </nav>
 
-    <div class="PRINCIPAL">
+    <div class="div_mae">
 
-        <!--Formulário-->
-        <div class="div_form">
-            <form action="#" method="post" class="form_painel">
-                <div class="painel_central">
-                    <h2>VENDAS</h2>
-
-
-
-                </div>
-
-            </form>
+        <div class="img_bike">
+            <img src="img/1-float-sport-21-preto.jpg" alt="" width="100%" height="100%">
         </div>
+
+        <div class="div_texto">
+            <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque congue vestibulum
+                leo, eu semper justo eleifend at. Nam eu magna et erat feugiat imperdiet. Nunc id
+                odio vitae turpis molestie faucibus iaculis vel dolor. Donec eu tempus eros. Ut
+                facilisis lacus eu ex feugiat, a gravida nulla tincidunt. Aenean pretium risus id
+                purus suscipit, id ornare odio blandit. Phasellus nisl quam, sagittis a purus sed,
+                sollicitudin luctus risus. Nam ut mauris a tortor viverra tincidunt. Proin suscipit
+                mi eu accumsan faucibus. Cras vehicula arcu cursus dui lacinia, sit amet vulputate
+                mauris laoreet. Duis malesuada fermentum placerat. Nam quam tortor, bibendum non
+                nulla ut, vulputate tempor orci. Proin ligula augue, tincidunt ac sodales sed,
+                gravida id est.
+            </p>
+        </div>
+
+    </div>
+    <div class="mae_tabela">
+        <!--TABELA ESQUERDA-->
+        <table class="tabela">
+            <tr>
+                <td>
+                    <p><strong>Lorem Ipsum</strong></p>
+
+                </td>
+                <td>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic odit ea
+                        magni</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><strong>Lorem Ipsum</strong></p>
+                </td>
+                <td>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic odit ea
+                        magni</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><strong>Lorem Ipsum</strong></p>
+                </td>
+                <td>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic odit ea
+                        magni</p>
+                </td>
+            </tr>
+        </table>
+        <!--FIM TABELA ESQUERDA-->
+
+        <!--TABELA DIREITA-->
+        <table class="tabela">
+            <tr>
+                <td>
+                    <p><strong>Lorem Ipsum</strong></p>
+                </td>
+                <td>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic odit ea
+                        magni</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><strong>Lorem Ipsum</strong></p>
+                </td>
+                <td>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic odit ea
+                        magni</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><strong>Lorem Ipsum</strong></p>
+                </td>
+                <td>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic odit ea
+                        magni</p>
+                </td>
+            </tr>
+        </table>
+        <!--FIM TABELA DIREITA-->
     </div>
 
     <!--RODA PÉ-->
@@ -79,7 +149,7 @@ session_start();
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
                 © 2020 Copyright:
-                <a class="text-white" href="#">Escola técnica de Brasília</a>
+                <a class="text-white" href="#">Escola Técnica de Brasília</a>
             </div>
             <!-- Copyright -->
         </footer>
@@ -87,8 +157,7 @@ session_start();
     </section>
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
 </body>
 
