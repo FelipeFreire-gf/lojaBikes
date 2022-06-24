@@ -46,9 +46,11 @@ session_start();
         <?php
         $conectar = mysqli_connect("localhost", "root", "", "db_bike");
 
+        $cod =  $_GET["codigo"];
+
         $sql_consulta = "SELECT idBICICLETAS, TIPO_BIKE, MARCA_BIKE, MODELO_BIKE, COR_BIKE, RODA_BIKE, 
             GRUPO_BIKE, QUADRO_BIKE, GUIDAO_BIKE, FREIO_BIKE, SELIM_BIKE, PEDAL_BIKE, 
-            PESO_BIKE, FOTO_BIKE, PRECO_BIKE FROM BICICLETAS WHERE idBICICLETAS = '$registro'";
+            PESO_BIKE, FOTO_BIKE, PRECO_BIKE FROM BICICLETAS WHERE idBICICLETAS = '$cod'";
         $resultado_consulta = mysqli_query($conectar, $sql_consulta);
 
         while ($registro = mysqli_fetch_row($resultado_consulta)) {
